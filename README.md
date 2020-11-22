@@ -11,11 +11,11 @@
 - 누구나 쉽게 문제를 등록하고 풀어볼 수 있으며 더불어학습능력향상과 시험에 대비하는 능력을 키울
   수 있을 것으로 예상됨.
 - application.yml 파일은 직접 resources 폴더에 생성해야 합니다.
+-TestCase의 관리자 서버로 웹으로 제작되었습니다.
 
 ## 주요 기술 요소
 
 - SpringBoot + JPA + MySQL + Maven 을 이용한 프로젝트입니다.
-- JWT 엑세스 토큰을 이용하여 로그인을 처리하였습니다.
 - 순환 참조 방지를 위하여 @JsonIgnoreProperties, @JsonBackReference를 사용하였습니다.
 - Swaager를 이용하여 RESTful API를 문서화하였습니다.
 - Spring Security를 이용하여 사용자의 권한에 따라 접근 가능한 페이지를 나누었습니다.
