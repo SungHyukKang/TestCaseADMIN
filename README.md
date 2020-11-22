@@ -38,6 +38,7 @@
 |         회원 탈퇴          |    관리자는 회원을 탈퇴시킬 수 있습니다.     |
 |         게시글 및 문제 삭제         | 관리자는 게시글 및 문제를 삭제할 수 있습니다. |
 
-![ezgif-3-571e25642a75](https://user-images.githubusercontent.com/50865982/99904205-cdc48d00-2d0c-11eb-974c-9ef7cdfb74dc.gif)
+![ezgif-6-b31cc3bb6778](https://user-images.githubusercontent.com/50865982/99907447-2cdfcd00-2d20-11eb-945e-c300c460e1a2.gif)
+
 
 
