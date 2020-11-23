@@ -28,6 +28,7 @@
 					<ul class="navbar-nav">
 						<li class="nav-item"><a class="nav-link" href="/">전체 회원</a></li>
 						<li class="nav-item"><a class="nav-link" href="/board/boardList">전체 글 </a></li>
+						<li class="nav-item"><a class="nav-link" href="/problem/problemList">전체 문제</a></li>
 <!-- 						<li class="nav-item"><a class="nav-link" href="/user/updateForm">회원정보</a></li> -->
 						<li class="nav-item"><a class="nav-link" href="/logout">로그아웃</a></li>
 					</ul>

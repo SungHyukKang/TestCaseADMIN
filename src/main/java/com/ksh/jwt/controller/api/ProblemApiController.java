@@ -18,7 +18,6 @@ public class ProblemApiController {
 	
 	@PostMapping("/deleteProblem/{problemId}")
 	public ResponseDto<String> deleteProblem(@PathVariable int problemId){
-		
 		problemService.delete(problemId);
 		
 		return new ResponseDto<String>(HttpStatus.OK.value(),"1");

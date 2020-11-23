@@ -38,7 +38,7 @@
 		<button id="btn-delete" class="btn btn-danger" >회원 탈퇴</button>
 	</p>
 	<div class="container">
-		<h2>작성한 게시글</h2>
+		<h2 align="center">작성한 게시글</h2>
 		<table class="table table-striped">
 			<thead>
 				<tr align="center">
@@ -50,11 +50,11 @@
 			</thead>
 			<tbody>
 				<c:forEach var="board" items="${boards}">
-					<tr>
+					<tr onclick="location.href='/boardDetail/${board.id}'">
 						<td align="center">${board.id}</td>
 						<td align="center">${board.title}</td>
 						<td align="center">${board.content}</td>
-						<td><c:forEach var="problem" items="${board.problems}">
+						<td align="center"><c:forEach var="problem" items="${board.problems}">
 					${problem.id }&nbsp;
 					</c:forEach></td>
 					</tr>

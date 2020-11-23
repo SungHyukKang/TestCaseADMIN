@@ -50,4 +50,10 @@ public class Board {
 	
 	@CreationTimestamp//createDate 자동 입력 now();
 	private Timestamp createDate;
+
+	@Override
+	public String toString() {
+		return "Board [id=" + id + ", title=" + title + ", content=" + content + ", image=" + image + ", count=" + count
+				+ ", user=" + user + ", username=" + username + ", createDate=" + createDate + "]";
+	}
 }
