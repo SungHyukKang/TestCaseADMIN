@@ -28,12 +28,6 @@ public class UserApiController {
 	private UserRepository userRepository;
 	
 	
-	@PostMapping("/noauth")
-	public String forbid123() {
-		
-		return "권한이 없습니다.";
-	}
-	
 	@PostMapping("admin/userDelete")
 	public ResponseDto<Integer> userDelete(@RequestBody Map<String,Integer> map){
 		userService.deleteInfo(map.get("userId"));
