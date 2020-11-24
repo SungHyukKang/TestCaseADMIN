@@ -12,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import com.ksh.jwt.model.Board;
 import com.ksh.jwt.repository.BoardRepository;
@@ -25,6 +26,8 @@ public class UserController {
 	
 	@Autowired
 	private BoardRepository boardRepository;
+	
+	
 	
 	
 	@GetMapping({"","/","/admin"})

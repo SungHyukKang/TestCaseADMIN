@@ -6,6 +6,7 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,6 +26,13 @@ public class UserApiController {
 
 	@Autowired
 	private UserRepository userRepository;
+	
+	
+	@PostMapping("/noauth")
+	public String forbid123() {
+		
+		return "권한이 없습니다.";
+	}
 	
 	@PostMapping("admin/userDelete")
 	public ResponseDto<Integer> userDelete(@RequestBody Map<String,Integer> map){

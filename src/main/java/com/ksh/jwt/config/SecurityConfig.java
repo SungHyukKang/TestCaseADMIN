@@ -53,6 +53,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 			.and()
 				.formLogin()
 				.defaultSuccessUrl("/admin")
+				.failureForwardUrl("/noauth")
 				; //스프링 시큐리타가 해당 주소로 요청오는 로그인을 가로채서 대신 로그인 해준다.
 	}
 }

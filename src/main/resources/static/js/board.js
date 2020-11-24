@@ -40,7 +40,7 @@ let index = {
 		$.ajax({
 			type: "POST",
 			url: "/deleteProblem/"+id,
-			dataType: "json" //요청을 서버로해서 응답이 왔을 때 기본적으로 모든 것이 문자열(생긴게 Json이라면) => javascript 
+			dataType: "json" //요청dd을 서버로해서 응답이 왔을 때 기본적으로 모든 것이 문자열(생긴게 Json이라면) => javascript 
 		}).done(function(resp){
 			alert("삭제 완료");
 			location.reload();
